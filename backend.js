@@ -11,6 +11,11 @@ let options = {
   pythonOptions: ['-u'], // get print results in real-time
   args: req.param('stations') // Python Script에 넘겨줄 인자 목록
 };
+
+app.get('',(req,res)=>{
+    res.sendFile(__dirname + '/index.html')
+})
+
 console.log("stations :", req.param('stations'));
 PythonShell.run('./test.py', options, function(err, msg) {
 	if (err) throw err;
