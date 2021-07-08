@@ -93,7 +93,7 @@
         data: {"stations":arrStation},
         success: function(data) {
         console.log("컨트롤러에서 받은 MSG : " + data);
-       
+       jsonData = JSON.parse(data);
         console.log(jsonData);
         alert(jsonData);
         },
