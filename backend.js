@@ -8,7 +8,7 @@ app.get('',(req,res)=>{
     res.sendFile(__dirname + '/index.html')
 })
 
-app.get("/",function(req,res){
+app.get("/ajax",function(req,res){
 let options = {
   mode: 'text',
   pythonOptions: ['-u'], // get print results in real-time
