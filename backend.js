@@ -12,7 +12,7 @@ let options = {
 };
 
 app.get('/metro',(req,res)=>{
-    res.sendFile(__dirname + '/seoulsubwaymap-master/index.html')
+    res.sendFile(__dirname + '/index.html')
 })
 
 
